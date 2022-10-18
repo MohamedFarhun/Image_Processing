@@ -53,14 +53,24 @@ def add_bg_from_url():
              </style>""",unsafe_allow_html=True)
 add_bg_from_url()  
 
+with st.sidebar:
+    st.header("Image Processing Using OpenCV")
+    st.image("image processing.jpg")
+    st.header("Team name : TEKKYZZ")
+    st.write("Leader     : MOHAMED FARHUN M")
+    st.write("Member 1   : NANDHAKUMAR S")
+    st.write("Member 2   : DHIVAKAR S")
+    st.sidebar.markdown(
+    "Do visit our [Github Repository](https://github.com/MohamedFarhun/Image_Processing_Daisi_Hackathon)"
+) 
+
 def welcome():
     
-    st.title('Image Processing using Streamlit')
+    st.title('Image Processing using OpenCV')
     
     st.subheader('A simple app that shows different image processing algorithms. You can choose the options'
-             + ' from the left. I have implemented only a few to show how it works on Streamlit. ' + 
-             'You are free to add stuff to this app.')
-    
+             + ' from the left sidebar. I have implemented only a few to show how it works on Streamlit using OpenCV. ')
+    st.image("TEKKYZZ Logo.png")
 
 
 def load_image(filename):
@@ -71,12 +81,12 @@ def photo():
 
     st.header("Thresholding, Edge Detection and Contours")
     
-    if st.button('See Original Image of Tom'):
+    if st.button('See Original Image of Shinchan'):
         
-        original = Image.open('tom.jpg')
+        original = Image.open('shinchan.png')
         st.image(original, use_column_width=True)
         
-    image = cv2.imread('tom.jpg')
+    image = cv2.imread('shinchan.png')
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     x = st.slider('Change Threshold value',min_value = 50,max_value = 255)  
