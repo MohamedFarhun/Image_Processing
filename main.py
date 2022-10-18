@@ -13,7 +13,9 @@ import numpy as np
 
 
 def main():
-
+    if st.button('Say hello'):
+        welcome()
+    
     selected_box = st.sidebar.selectbox(
     'Choose one of the following',
     ('Welcome','Image Processing', 'Video', 'Face Detection', 'Feature Detection', 'Object Detection')
