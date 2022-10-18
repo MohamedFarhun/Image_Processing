@@ -97,7 +97,7 @@ def photo():
     
     st.text("Press the button below to view Canny Edge Detection Technique")
     if st.button('Canny Edge Detector'):
-        image = load_image("jerry.jpg")
+        image = load_image("shinchan.png")
         edges = cv2.Canny(image,50,300)
         cv2.imwrite('edges.jpg',edges)
         st.image(edges,use_column_width=True,clamp=True)
@@ -105,7 +105,7 @@ def photo():
     y = st.slider('Change Value to increase or decrease contours',min_value = 50,max_value = 255)     
     
     if st.button('Contours'):
-        im = load_image("jerry1.jpg")
+        im = load_image("shinchan.png")
         
         imgray = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
         ret,thresh = cv2.threshold(imgray,y,255,0)
@@ -159,7 +159,7 @@ def face_detection():
 def feature_detection():
     st.subheader('Feature Detection in images')
     st.write("SIFT")
-    image = load_image("tom1.jpg")
+    image = load_image("shinchan.png")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     sift = cv2.xfeatures2d.SIFT_create()    
     keypoints = sift.detect(gray, None)
@@ -170,7 +170,7 @@ def feature_detection():
     
     
     st.write("FAST")
-    image_fast = load_image("tom1.jpg")
+    image_fast = load_image("shinchan.png")
     gray = cv2.cvtColor(image_fast, cv2.COLOR_BGR2GRAY)
     fast = cv2.FastFeatureDetector_create()
     keypoints = fast.detect(gray, None)
