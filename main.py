@@ -55,7 +55,7 @@ add_bg_from_url()
 
 with st.sidebar:
     st.header("Image Processing Using OpenCV")
-    st.image("image processing.jpg")
+    st.image("Image Processing.jpg")
     st.header("Team name : TEKKYZZ")
     st.write("Leader     : MOHAMED FARHUN M")
     st.write("Member 1   : NANDHAKUMAR S")
