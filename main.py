@@ -11,7 +11,13 @@ import cv2
 import numpy as np
 
 
-
+def Image_Processing_Using_OpenCV():
+    """image_processing_using_opencv.add_bg_from_url().value"""
+    global Image_Processing_Using_OpenCV
+    if Image_Processing_Using_OpenCV: return Image_Processing_Using_OpenCV
+    ...
+    
+    
 def main():
 
     selected_box = st.sidebar.selectbox(
@@ -60,7 +66,7 @@ def welcome():
     st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Team TEKKYZZ]", icon="©")
     st.subheader('A simple app that shows different image processing algorithms. You can choose the options'
              + ' from the left sidebar. I have implemented only a few to show how it works on Streamlit using OpenCV. ')
-    st.image("TEKKYZZ Logo.png")
+    st.image("TEKKYZZ Logo.png",use_column_width=True)
 
 
 def load_image(filename):
