@@ -1,6 +1,6 @@
 # Image-Processing using OpenCV
 ## A streamlit app showing image processing techniques.
-It has a sidebar with image processing, face detection, feature dectection and object detection. This app has the capacity to sketch Canny Edge detector and Countours, 
+It has a sidebar with image processing, face detection, feature dectection and object detection. This app has the capacity to sketch Canny Edge and Countours, 
 Detecting Face and Eyes
 
 ### List of Image Processing Methods
