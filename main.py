@@ -139,11 +139,11 @@ def face_detection():
     
     if st.button('See Original Image'):
         
-        original = Image.open('friends.jpeg')
+        original = Image.open('developers.jpg')
         st.image(original, use_column_width=True)
     
     
-    image2 = cv2.imread("friends.jpeg")
+    image2 = cv2.imread("developers.jpg")
 
     face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
     faces = face_cascade.detectMultiScale(image2)
@@ -204,7 +204,7 @@ def object_detection():
     
     st.text("Detecting eyes from an image")
     
-    image = load_image("cr7.jpg")
+    image = load_image("developers.jpg")
     img_gray_ = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
     img_rgb_ = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
         
