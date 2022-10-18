@@ -22,15 +22,15 @@ def main():
 
     selected_box = st.sidebar.selectbox(
     'Choose one of the following',
-    ('Welcome','Image Processing', 'Video', 'Face Detection', 'Feature Detection', 'Object Detection')
+    ('Welcome','Image Processing', 'Video Player', 'Face Detection', 'Feature Detection', 'Object Detection')
     )
     
     if selected_box == 'Welcome':
         welcome() 
     if selected_box == 'Image Processing':
         photo()
-    if selected_box == 'Video':
-        video()
+    if selected_box == 'Video Player':
+        video_player()
     if selected_box == 'Face Detection':
         face_detection()
     if selected_box == 'Feature Detection':
@@ -119,7 +119,7 @@ def photo():
          
 
     
-def video():
+def video_player():
     uploaded_file = st.file_uploader("Choose a video file to play")
     if uploaded_file is not None:
          bytes_data = uploaded_file.read()
