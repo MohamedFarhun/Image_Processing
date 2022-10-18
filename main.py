@@ -151,7 +151,7 @@ def face_detection():
     for x, y, width, height in faces:
         cv2.rectangle(image2, (x, y), (x + width, y + height), color=(255, 0, 0), thickness=2)
     
-    cv2.imwrite("faces.jpg", image2)
+    cv2.imwrite("cr7.jpg", image2)
     
     st.image(image2, use_column_width=True,clamp = True)
  
@@ -204,7 +204,7 @@ def object_detection():
     
     st.text("Detecting eyes from an image")
     
-    image = load_image("eyes.jpg")
+    image = load_image("cr7.jpg")
     img_gray_ = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
     img_rgb_ = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
         
