@@ -13,7 +13,7 @@ import numpy as np
 
 
 def main():
-    if st.button('Say hello'):
+    if st.sidebar.button('Welcome'):
         welcome()
     
     selected_box = st.sidebar.selectbox(
