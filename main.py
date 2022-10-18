@@ -53,21 +53,11 @@ def add_bg_from_url():
              </style>""",unsafe_allow_html=True)
 add_bg_from_url()  
 
-with st.sidebar:
-    st.header("Image Processing Using OpenCV")
-    st.image("Image Processing.jpg")
-    st.header("Team name : TEKKYZZ")
-    st.write("Leader     : MOHAMED FARHUN M")
-    st.write("Member 1   : NANDHAKUMAR S")
-    st.write("Member 2   : DHIVAKAR S")
-    st.sidebar.markdown(
-    "Do visit our [Github Repository](https://github.com/MohamedFarhun/Image_Processing_Daisi_Hackathon)"
-) 
 
 def welcome():
     
     st.title('Image Processing using OpenCV')
-    
+    st.info("Developed by MOHAMED FARHUN M, NANDHAKUMAR S, DHIVAKAR S [Team TEKKYZZ]", icon="©")
     st.subheader('A simple app that shows different image processing algorithms. You can choose the options'
              + ' from the left sidebar. I have implemented only a few to show how it works on Streamlit using OpenCV. ')
     st.image("TEKKYZZ Logo.png")
