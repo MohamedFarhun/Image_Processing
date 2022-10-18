@@ -86,7 +86,7 @@ def photo():
         ret,thresh = cv2.threshold(imgray,y,255,0)
         image, contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
         
-        img = cv2.drawContours(im, contours, -1, (0,255,0), 3)
+        img = cv2.drawContours(im, [contours], -1, (0,255,0), 3)
  
         
         st.image(thresh, use_column_width=True, clamp = True)
