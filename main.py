@@ -204,7 +204,7 @@ def object_detection():
     
     st.text("Detecting eyes from an image")
     
-    image = load_image("developers.jpg")
+    image = load_image("cr7.jpg")
     img_gray_ = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
     img_rgb_ = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
         
