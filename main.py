@@ -31,7 +31,27 @@ def main():
         feature_detection()
     if selected_box == 'Object Detection':
         object_detection() 
- 
+
+def st_ui():
+    '''
+    Streamlit UI
+    '''
+    st.set_page_config(
+        page_title="Iris flower prediction dataset",
+        page_icon="🍲",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )         
+        
+def add_bg_from_url():
+    st.markdown(f"""
+         <style>
+         .stApp {{
+             background-image: url("https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1060&t=st=1666113853~exp=1666114453~hmac=0b203338e573c8494b851c165db2f8c94b21ce4fd53e817e4104e96b5cd7dec7");
+             background-attachment: fixed;
+             background-size: cover}}
+             </style>""",unsafe_allow_html=True)
+add_bg_from_url()  
 
 def welcome():
     
