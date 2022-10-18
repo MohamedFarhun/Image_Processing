@@ -13,20 +13,25 @@ import numpy as np
 
 
 def main():
-    st.header("Image Processing Using OpenCV")
-    if st.sidebar.button('Welcome'):
-        welcome()
-    if st.sidebar.button('Image Processing'):
-        photo()
-    if st.sidebar.button('Video'):
-        video()
-    if st.sidebar.button('Face Detection'):
-        face_detection()
-    if st.sidebar.button('Feature Detection'):
-        feature_detection()
-    if st.sidebar.button('Object Detection'):
-        object_detection()     
 
+    selected_box = st.sidebar.selectbox(
+    'Choose one of the following',
+    ('Welcome','Image Processing', 'Video', 'Face Detection', 'Feature Detection', 'Object Detection')
+    )
+    
+    if selected_box == 'Welcome':
+        welcome() 
+    if selected_box == 'Image Processing':
+        photo()
+    if selected_box == 'Video':
+        video()
+    if selected_box == 'Face Detection':
+        face_detection()
+    if selected_box == 'Feature Detection':
+        feature_detection()
+    if selected_box == 'Object Detection':
+        object_detection() 
+ 
 
 def welcome():
     
