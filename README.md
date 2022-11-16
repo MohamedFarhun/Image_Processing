@@ -53,4 +53,4 @@ image_processing_using_opencv <- Daisi("farhun/Image Processing Using OpenCV")
 image_processing_using_opencv$add_bg_from_url()$value()
 
 ## Author  
-### Mohamed Farhun M  
+### Mohamed Farhun M, Nandhakumar S, Dhivakar S 
